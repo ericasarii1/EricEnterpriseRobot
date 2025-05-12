@@ -254,7 +254,7 @@ async def new_member(update: Update, context: ContextTypes.DEFAULT_TYPE):
             # Welcome Devs
             elif new_mem.id in DEV_USERS:
                 await update.effective_message.reply_text(
-                    "Be cool! A member of the Black Bulls just joined.",
+                    "Be cool! A member of the Ovanime Indonesia just joined.",
                     reply_to_message_id=reply,
                 )
                 welcome_log = (
@@ -589,7 +589,7 @@ async def left_member(update: Update, context: ContextTypes.DEFAULT_TYPE):
             # Give the devs a special goodbye
             elif left_mem.id in DEV_USERS:
                 await update.effective_message.reply_text(
-                    "See you later at the Zero Two's Association!",
+                    "See you later at the Ovanime Indonesia Association!",
                     reply_to_message_id=reply,
                 )
                 return
