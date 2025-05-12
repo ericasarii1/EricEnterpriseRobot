@@ -76,12 +76,12 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-ZEROTWO_IMG = "https://telegra.ph/file/5b9bc54b0ae753bb1ec18.jpg"
+ZEROTWO_IMG = "https://ar-hosting.pages.dev/1747056721322.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @kishoreee \
+ You can support the project by contacting @eric_asarii \
  Supporting isn't always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at @blackbulls_support."""
+ Those who cannot provide monetary support are welcome to help us develop the bot at @Grup_Ovanime_Indo."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -149,45 +149,43 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     HELP_STRINGS = """
     Hey there!.
-    My Name is {}, from Darling in The FranXX. Take me as your group's darling to have fun with me. \
-    I can help you with the following commands.
+    ❂ My Name is {}, from Azure Lane. Take me as your group's darling to have fun with me. \
+    ❂ I can help you with the following commands.
 
     *Main* commands available:
-    • /help: PM's you this message.
-    • /help <module name>: PM's you info about that module.
-    • /settings:
-    • in PM: will send you your settings for all supported modules.
-    • in a group: will redirect you to pm, with all that chat's settings.
-
-
+    ❂ /help: PM's you this message.
+    ❂ /help <module name>: PM's you info about that module.
+    ❂ /settings:
+    ❂ in PM: will send you your settings for all supported modules.
+    ❂ in a group: will redirect you to pm, with all that chat's settings.
     {}
-    And the following:
+    ❂ And the following:
     """.format(
         context.bot.first_name,
-        "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
+        "" if not ALLOW_EXCL else "\n❂ All commands can either be used with / or !.\n",
     )
 
     buttons = [
         [
             InlineKeyboardButton(
-                text="Add to Group",
+                text="Add Me",
                 url=f"https://t.me/{context.bot.username}?startgroup=True",
             ),
         ],
         [
             InlineKeyboardButton(
-                "Support Group",
-                "https://t.me/blackbulls_support",
+                "Updates",
+                "https://t.me/Update_Enterprise",
             ),
             InlineKeyboardButton(
-                "Announcements",
-                "https://t.me/blackbull_bots"
+                "Group Support",
+                "https://t.me/Grup_Ovanime_Indo"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="Source Code",
-                url="https://github.com/Black-Bulls-Bots/zerotwobot"
+                text="Report",
+                url="https://t.me/Eagle_Union"
             )
         ]
     ]
@@ -229,20 +227,20 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 ZEROTWO_IMG,
                 caption=escape_markdown(f"""                
                 Hey There {first_name}. \
-                \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
-                \nType /help to get available commands. \
+                \n❂ I'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
+                \n❂ Type /help to get available commands. \
 
-                \nVersion info: \
-                \nI'm running on v{BOT_VERSION} \
-                \nPython: {PYTHON_VERSION} \
-                \nPTB: {PTB_VERSION} \
-                \nBOT_API: {BOT_API_VERSION}"""),
+                \nCharacter Information: \
+                \n❂ I'm Enterprise version {BOT_VERSION} \
+                \n❂ I'm an Azure Lane themed management bot \
+                \n❂ I am ready to be an assistant in your group as an enterprise at Azure Lane  \
+                \n❂ I'm ready to manage your group """),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
     else:
         await update.effective_message.reply_text(
-            "I'm running successfully on v{}\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "I'm Enterprise running successfully on version {}\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 BOT_VERSION,uptime,
             ),
             parse_mode=ParseMode.HTML,
@@ -250,12 +248,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support",
-                            url="https://t.me/blackbulls_support",
+                            text="Owner",
+                            url="https://t.me/rezreza_asarii",
                         ),
                         InlineKeyboardButton(
-                            text=str("Announcement's"),
-                            url="https://t.me/blackbull_bots",
+                            text=str("TE Team"),
+                            url="https://t.me/TE_Team_Official",
                         ),
                     ],
                 ],
@@ -303,22 +301,20 @@ async def error_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def help_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     HELP_STRINGS = """
     Hey there!.
-    My Name is {}, from Darling in The FranXX. Take me as your group's darling to have fun with me. \
-    I can help you with the following commands.
+    ❂ My Name is {}, from Azure Lane. Take me as your group's darling to have fun with me. \
+    ❂ I can help you with the following commands.
 
     *Main* commands available:
-    • /help: PM's you this message.
-    • /help <module name>: PM's you info about that module.
-    • /settings:
-    • in PM: will send you your settings for all supported modules.
-    • in a group: will redirect you to pm, with all that chat's settings.
-
-
+    ❂ /help: PM's you this message.
+    ❂ /help <module name>: PM's you info about that module.
+    ❂ /settings:
+    ❂ in PM: will send you your settings for all supported modules.
+    ❂ in a group: will redirect you to pm, with all that chat's settings.
     {}
-    And the following:
+    ❂ And the following:
     """.format(
         context.bot.first_name,
-        "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
+        "" if not ALLOW_EXCL else "\n❂ All commands can either be used with / or !.\n",
     )
 
     query = update.callback_query
@@ -387,22 +383,20 @@ async def get_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     HELP_STRINGS = """
     Hey there!.
-    My Name is {}, from Darling in The FranXX. Take me as your group's darling to have fun with me. \
-    I can help you with the following commands.
+    ❂ My Name is {}, from Azure Lane. Take me as your group's darling to have fun with me. \
+    ❂ I can help you with the following commands.
 
     *Main* commands available:
-    • /help: PM's you this message.
-    • /help <module name>: PM's you info about that module.
-    • /settings:
-    • in PM: will send you your settings for all supported modules.
-    • in a group: will redirect you to pm, with all that chat's settings.
-
-
+    ❂ /help: PM's you this message.
+    ❂ /help <module name>: PM's you info about that module.
+    ❂ /settings:
+    ❂ in PM: will send you your settings for all supported modules.
+    ❂ in a group: will redirect you to pm, with all that chat's settings.
     {}
-    And the following:
+    ❂ And the following:
     """.format(
         context.bot.first_name,
-        "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
+        "" if not ALLOW_EXCL else "\n❂ All commands can either be used with / or !.\n",
     )
 
     chat = update.effective_chat  # type: Optional[Chat]
@@ -683,7 +677,7 @@ async def migrate_chats(update: Update, _: ContextTypes.DEFAULT_TYPE):
 
 async def send_alive(context: ContextTypes.DEFAULT_TYPE):
     try:
-        await context.bot.send_message(-1001765891293, random.choice(ALIVE_TEXT))
+        await context.bot.send_message(-1002412676287, random.choice(ALIVE_TEXT))
     except:
         await context.bot.send_message(OWNER_ID, "Can't send alive message to group")
         raise
