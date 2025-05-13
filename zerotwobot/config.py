@@ -19,7 +19,7 @@ class Config(object):
     TOKEN = ""  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 7742582171  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "eric_asarii"
-    SUPPORT_CHAT = "Grup_Ovanime_Indo"  # Your own group for support, do not add the @
+    SUPPORT_CHAT = "eagleunionenterprise"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1002559301891
     )  # Prints any new group the bot is added to, prints just the name and ID.
@@ -33,7 +33,7 @@ class Config(object):
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = ""  # needed for any database modules
     LOAD = []
-    NO_LOAD = ["rss", "cleaner", "connection", "math", "disasters", "stickers", "request", "reverse", "fun"]
+    NO_LOAD = ["rss", "cleaner", "connection", "math", "disasters", "stickers", "request", "reverse", "fun", "misc"]
     WEBHOOK = False
     INFOPIC = True
     URL = None
