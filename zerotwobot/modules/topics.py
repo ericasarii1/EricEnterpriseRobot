@@ -203,10 +203,10 @@ Telegram introuduced new way of managing your chat called Forums(Topics)
 
 As a group management bot I have some useful commands to help you
 create, delete, close and reopen topics in your chat.
-• `/topicnew`*:* Create new topic, requires topic name to create.
-• `/topicdel`*:* Delete an existing topic, requires topic ID to delete.  
-• `/topicclose`*:* Close an existing topic, requires topic ID to close.
-• `/topicopen`*:* Open an already closed topic, requires topic ID to open.  
+❂ `/topicnew`*:* Create new topic, requires topic name to create.
+❂ `/topicdel`*:* Delete an existing topic, requires topic ID to delete.  
+❂ `/topicclose`*:* Close an existing topic, requires topic ID to close.
+❂ `/topicopen`*:* Open an already closed topic, requires topic ID to open.  
 """
 
 # • `/setactiontopic`*:* Set issuing topic for action messages such as welcome, goodbye, warns, bans,..etc
