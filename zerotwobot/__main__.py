@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
 ZEROTWO_IMG = "https://ar-hosting.pages.dev/1747056721322.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @eric_asarii \
+ You can support the project by contacting @rezreza_asarii \
  Supporting isn't always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at @Grup_Ovanime_Indo."""
 
@@ -149,7 +149,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     
     HELP_STRINGS = """
     Hey there!.
-    ❂ My Name is {}, from Azure Lane. Take me as your group's darling to have fun with me. \
+    ❂ My Name is {}, from Azur Lane. Take me as your group's darling to have fun with me. \
     ❂ I can help you with the following commands.
 
     *Main* commands available:
@@ -232,8 +232,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
                 \nCharacter Information: \
                 \n❂ I'm Enterprise version {BOT_VERSION} \
-                \n❂ I'm an Azure Lane themed management bot \
-                \n❂ I am ready to be an assistant in your group as an enterprise at Azure Lane  \
+                \n❂ I'm an Azur Lane themed management bot \
+                \n❂ I am ready to be an assistant in your group as an Enterprise at Azur Lane  \
                 \n❂ I'm ready to manage your group """),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
@@ -301,7 +301,7 @@ async def error_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def help_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
     HELP_STRINGS = """
     Hey there!.
-    ❂ My Name is {}, from Azure Lane. Take me as your group's darling to have fun with me. \
+    ❂ My Name is {}, from Azur Lane. Take me as your group's darling to have fun with me. \
     ❂ I can help you with the following commands.
 
     *Main* commands available:
@@ -383,7 +383,7 @@ async def get_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     HELP_STRINGS = """
     Hey there!.
-    ❂ My Name is {}, from Azure Lane. Take me as your group's darling to have fun with me. \
+    ❂ My Name is {}, from Azur Lane. Take me as your group's darling to have fun with me. \
     ❂ I can help you with the following commands.
 
     *Main* commands available:
